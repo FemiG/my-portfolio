@@ -45,7 +45,7 @@ a{
 /* Intro Section */
 
 .intro{
-    background-image: url("../img/william-daigneault-olVJDJYKPSI-unsplash.png");
+    background-image: url("../img/jonatan-pie-h8nxGssjQXs-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,7 +170,7 @@ h2{
 
 /* Position the "next button" to the right */
 .next {
-  float: right;
+  /* float: right; */
   border-radius: 3px 0 0 3px;
   display:inline-block;
   right: 0;
