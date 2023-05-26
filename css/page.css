@@ -82,6 +82,9 @@ h1{
 /*End*/
 
 /*Start*/
+section{
+    display:none;
+}
 
 .about{
     background-image: url("../img/aleksandr-popov-V2k_MYodM50-unsplash.jpg");
