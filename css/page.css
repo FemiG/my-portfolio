@@ -4,12 +4,14 @@ body{
 
 }
 
-.container{
+.container-fluid{
     font-family: 'Montserrat Alternates', sans-serif;
-    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0;
     background-color: black;
     color: white;
+    flex-wrap:wrap;
 }
 
 ul {
@@ -26,10 +28,12 @@ li{
 
 .nav-bar{
     background-color: white;
-    height: 30px;
+    height: fit-content;
     padding: 5px;
     width: 100%;
     position: fixed;
+    width:100%;
+    flex-wrap:wrap;
 }
 
 a{
@@ -106,7 +110,14 @@ section{
 .latest{
     background-color: white;
     color: black;
+    display:inline-flex;
+    flex-wrap:wrap;
 }
+
+.flex-direction{
+    flex-direction:column;
+  }
+  
 
 span{
     color: grey;
@@ -118,6 +129,7 @@ span{
 
 h2{
     margin-top: 0px;
+    
 }
 
 .past-cards{
@@ -175,13 +187,13 @@ h2{
 .next {
   /* float: right; */
   border-radius: 3px 0 0 3px;
-  display:inline-block;
+  display:flexbox;
   right: 0;
 }
 
 .prev{
     right: 3%;
-    display:inline-block;
+    display:flexbox;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -198,14 +210,14 @@ h2{
 .text {
   color: white;
   font-size: 15px;
-  padding: 50px; 
+  /* padding: 50px;  */
   /* padding-left: 100px; */
   bottom: 8px;
   width: 100%;
   text-align: center;
   display:block;
-  /* float:right; */
-  /* width:50%; */
+  float:right;
+  width:50%;
   margin: 15% auto;
   text-align: center;
   }
@@ -251,7 +263,7 @@ h2{
 .mySlides img{
     border-radius: 10px;
     width: 50%;
-    height:500px;
+    height:100%;
     float:left;
   
 }
@@ -274,6 +286,7 @@ footer{
     color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
+    flex-wrap:wrap;
 }
 
 h3 {
