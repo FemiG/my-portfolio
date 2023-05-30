@@ -161,14 +161,14 @@ h2{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     padding: 5px;
-    width: 23.3%;
+    /* width: 24%; */
     height: fit-content;
     min-width: 165px;
 }
 
 @media (min-width: 200px){
     .past-cards{
-        width:23.3%;
+        width:23.6%;
     }
 }
 
