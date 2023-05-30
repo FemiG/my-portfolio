@@ -23,7 +23,8 @@ ul {
 }
 
 li{
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .nav-bar{
@@ -34,6 +35,8 @@ li{
     position: fixed;
     width:100%;
     flex-wrap:wrap;
+    z-index: 1000;
+    
 }
 
 a{
@@ -59,11 +62,17 @@ a{
     padding-top: 25%;
     padding-bottom: 25%;
     background-attachment: fixed;
-    
+    border-bottom: 10%;
 }
 
 h1{
     margin: 0;
+    position: fixed;
+    text-align: center;
+    z-index: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .intro button{
@@ -74,7 +83,12 @@ h1{
     color: white;
     border-radius: 15px;
     font-family: 'Montserrat Alternates', sans-serif;
-    
+    position: fixed;
+    text-align: center;
+    z-index: 0;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .intro button:hover{
@@ -101,6 +115,9 @@ section{
     padding-top: 25%;
     padding-bottom: 25%;
     background-attachment: fixed;
+    z-index: 5;
+    position: relative;
+    
 }
 
 /*End*/
@@ -112,6 +129,8 @@ section{
     color: black;
     display:inline-flex;
     flex-wrap:wrap;
+    z-index: 5;
+    position: relative;
 }
 
 .flex-direction{
@@ -158,6 +177,10 @@ h2{
 .slideshow-container {
   width: 100%;
   margin: auto;
+  flex-wrap:wrap;
+  display:inline-flex;
+  z-index: 5;
+    position: relative;
 }
 
 /* Hide the images by default */
@@ -187,13 +210,15 @@ h2{
 .next {
   /* float: right; */
   border-radius: 3px 0 0 3px;
-  display:flexbox;
+  display:flex;
   right: 0;
+  z-index: 0;
 }
 
 .prev{
-    right: 3%;
-    display:flexbox;
+    display:flex;
+    right: 0;
+    z-index: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -206,6 +231,9 @@ h2{
 .best{
     display: flex;
     height: fit-content;
+    z-index: 10;
+    position: relative;
+    background-image: url(../img/black.jpg);
 }
 .text {
   color: white;
@@ -287,6 +315,8 @@ footer{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     flex-wrap:wrap;
+    z-index: 5;
+    position: relative;
 }
 
 h3 {
