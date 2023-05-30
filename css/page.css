@@ -63,6 +63,8 @@ a{
     padding-bottom: 25%;
     background-attachment: fixed;
     border-bottom: 10%;
+    overflow: auto;
+    
 }
 
 h1{
@@ -109,7 +111,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: cover;
+    width: 100%;
     text-align: center;
     vertical-align: baseline;
     padding-top: 25%;
@@ -117,6 +119,7 @@ section{
     background-attachment: fixed;
     z-index: 5;
     position: relative;
+
     
 }
 
@@ -131,10 +134,11 @@ section{
     flex-wrap:wrap;
     z-index: 5;
     position: relative;
+    max-width: 100%;
 }
 
 .flex-direction{
-    flex-direction:column;
+    flex-direction:row;
   }
   
 
@@ -143,7 +147,8 @@ span{
 }
 
 .past-column{
-    display:flex
+    display:flex;
+    flex-wrap: wrap;
 }
 
 h2{
@@ -156,8 +161,15 @@ h2{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     padding: 5px;
-    width: 25%;
+    width: 23.3%;
     height: fit-content;
+    min-width: 165px;
+}
+
+@media (min-width: 200px){
+    .past-cards{
+        width:23.3%;
+    }
 }
 
 .past-cards img{
@@ -219,6 +231,7 @@ h2{
     display:flex;
     right: 0;
     z-index: 0;
+    margin-right: 40px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
