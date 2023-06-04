@@ -6,7 +6,4 @@ function burger() {
     } else {
       x.className = "menu";
     }
-    console.log("Donuts")
   }
-
-burger()

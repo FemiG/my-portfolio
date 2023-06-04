@@ -59,25 +59,15 @@ a{
     color: black;
     transition: 1s ease-in-out;
   }
-
-  .icon:hover{
-    background-color: black;
-    color: white;
-    padding-left: 5px;
-    transition: ease-in-out;
-    transition-duration: 1s;
-    padding-right: 7px;
-    border-radius: 5px;
-  }
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-bar (.icon) */
   @media screen and (max-width: 700px) {
-    .menu a:not(:last-child){
+    a.disa{
       display: none;
     }
     .menu a.icon {
       float: right;
-      display: block;
+      display: flex;
     }
   }
   
